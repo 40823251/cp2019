@@ -3,17 +3,17 @@
 </summary><content type="html">&lt;p&gt;在此利用https://dartpad.github.io 將位於dart網頁 目錄中dart程式導入&lt;/p&gt;
 
 
-&lt;script&gt;
+&lt;script&gt;// &lt;![CDATA[
 function getDart(dirname){
-    source = "https://dartpad.dartlang.org/?id=555fae141cbd2dc10671e7e330b1d00a";
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823251&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
     document.getElementById("iframe").src = source ;
 }
 function getHtmlDart(dirname){
-    source = "https://dartpad.dartlang.org/?id=b2ab311ac1fa0cf1052755d3438a2d70";
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823251&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
 document.getElementById("iframe").src = source ;
 }
 function getFlutter(dirname){
-    source = "https://dartpad.dartlang.org/?id=62f56f5e9aa783d6ea4ba74dead6575c";
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
 document.getElementById("iframe").src = source ;
 }
 function largest(){
@@ -24,15 +24,13 @@ function original(){
 document.getElementById("iframe").width = 800 ;
 document.getElementById("iframe").height = 600 ;
 }
-&lt;/script&gt;
+// ]]&gt;&lt;/script&gt;
 
 &lt;!-- 取 Dart 程式的按鈕 --&gt;
 
-&lt;p&gt;&lt;button onclick="largest()"&gt;放大&lt;/button&gt; &lt;button onclick="original()"&gt;回復&lt;/button&gt; &lt;button onclick="getDart('hello')"&gt;Hello&lt;/button&gt; &lt;button onclick="getDart('for')"&gt;For Loop&lt;/button&gt; &lt;button onclick="getDart('sum')"&gt;Sum&lt;/button&gt; &lt;button onclick="getDart('runge_kutta')"&gt;Runge-Kutta&lt;/button&gt; &lt;button onclick="getDart('mass_spring_damping')"&gt;Mass Spring Damping&lt;/button&gt; &lt;button onclick="getHtmlDart('roc_flag')"&gt;ROC Flag&lt;/button&gt; &lt;button onclick="getHtmlDart('grid')"&gt;Grid&lt;/button&gt; &lt;button onclick="getHtmlDart('slithery')"&gt;Slithery&lt;/button&gt; &lt;button onclick="getFlutter('flutter1')"&gt;Flutter1&lt;/button&gt; &lt;button onclick="getFlutter('flutter2')"&gt;Flutter2&lt;/button&gt; &lt;button onclick="getFlutter('flutter3')"&gt;Flutter3&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button onclick="largest()"&gt;放大&lt;/button&gt; &lt;button onclick="original()"&gt;回復&lt;/button&gt; &lt;button onclick="getDart('hello')"&gt;Hello&lt;/button&gt; &lt;button onclick="getDart('for')"&gt;For Loop&lt;/button&gt; &lt;button onclick="getDart('sum')"&gt;Sum&lt;/button&gt;&lt;button onclick="getDart('runge_kutta')"&gt;Runge-Kutta&lt;/button&gt;&lt;/p&gt;
 
-&lt;!-- 內建放入的 Dart 原始碼 --&gt;
-
-&lt;p&gt;&lt;iframe height="600" src="https://dartpad.dev/embed-inline.html?id=555fae141cbd2dc10671e7e330b1d00a" width="800"&gt;&lt;/iframe&gt;&lt;/p&gt;</content><category term="2019FallCP"></category></entry><entry><title>2019 Fall CP 課程</title><link href=".%5C2019-Fall-Win10-1903.html" rel="alternate"></link><published>2019-10-30T11:00:00+08:00</published><updated>2019-10-30T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2019-10-30:.\2019-Fall-Win10-1903.html</id><summary type="html">&lt;p&gt;2019 Fall 一開始, 1903 版的 Windows 10 就大舉更新, 除了逐步去掉先前許多舊版的設定視窗, 也將系統的指令搜尋與 App 應用程式進行綁定. 許多採用可攜設定的程式執行流程, 隨著更新進程的推展, 必須因應修改才可以正常運作.&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="800" height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;amp;gh_repo=cp2019&amp;amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;amp;theme=dark"&gt;&lt;/iframe&gt;&lt;/p&gt;</content><category term="2019FallCP"></category></entry><entry><title>2019 Fall CP 課程</title><link href=".%5C2019-Fall-Win10-1903.html" rel="alternate"></link><published>2019-10-30T11:00:00+08:00</published><updated>2019-10-30T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2019-10-30:.\2019-Fall-Win10-1903.html</id><summary type="html">&lt;p&gt;2019 Fall 一開始, 1903 版的 Windows 10 就大舉更新, 除了逐步去掉先前許多舊版的設定視窗, 也將系統的指令搜尋與 App 應用程式進行綁定. 許多採用可攜設定的程式執行流程, 隨著更新進程的推展, 必須因應修改才可以正常運作.&lt;/p&gt;
 &lt;!--PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;為何要使用可攜系統&lt;/h2&gt;
