@@ -1,8 +1,11 @@
 // 定義一個 C to F function
-
+cnfu(num c){
+return c*9/5 + 32;
+}
 // define a F to C function
-
-
+fnfu(num f){
+return (f - 32)*5/9;
+}
 // 每一個 Dart 程式都從 main() 開始執行
 main() {
   // 宣告 len 整數變數, 準備設為各字串的長度
@@ -36,9 +39,9 @@ main() {
     // 之後就可以根據 type 與 number 執行各數列元素的溫度轉換
     
     if (type == "C"){
-      print("C: $type, $number");
+      print("攝氏 $number° = 華氏 ${cnfu(number)}°");
     }else{
-      print("F: $type, $number");
+      print("華氏 $number° = 攝氏 ${fnfu(number)}°");
     }
       
   } // for
