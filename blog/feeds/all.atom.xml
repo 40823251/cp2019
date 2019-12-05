@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CP 2019 40823251</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/all.atom.xml" rel="self"></link><id>./</id><updated>2019-12-05T11:00:00+08:00</updated><entry><title>w12溫度轉換</title><link href=".%5C40823251_w12.html" rel="alternate"></link><published>2019-12-05T11:00:00+08:00</published><updated>2019-12-05T11:00:00+08:00</updated><author><name>40823251</name></author><id>tag:None,2019-12-05:.\40823251_w12.html</id><summary type="html">&lt;p&gt;w12溫度轉換&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;w12溫度轉換&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CP 2019 40823251</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/all.atom.xml" rel="self"></link><id>./</id><updated>2019-12-05T11:00:00+08:00</updated><entry><title>w13溫度轉換</title><link href=".%5C40823251_w13.html" rel="alternate"></link><published>2019-12-05T11:00:00+08:00</published><updated>2019-12-05T11:00:00+08:00</updated><author><name>40823251</name></author><id>tag:None,2019-12-05:.\40823251_w13.html</id><summary type="html">&lt;p&gt;w13溫度轉換&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;w13溫度轉換&lt;/p&gt;
 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TLOGScPOM9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="2019FallCP"></category></entry><entry><title>期中考</title><link href=".%5C40823251_w9.html" rel="alternate"></link><published>2019-11-07T11:00:00+08:00</published><updated>2019-11-07T11:00:00+08:00</updated><author><name>40823251</name></author><id>tag:None,2019-11-07:.\40823251_w9.html</id><summary type="html">&lt;p&gt;期中考&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TLOGScPOM9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;重點整理:
+1.lnit是一個整數物件 ，可與parse (讀取) 一起宣告。
+2.將數字代入指定的公式，必須經由運算可得。
+3. ==  表示判斷式。
+4.Input是html的表單。 value(預設)
+5.body中的white為白色
+6.InputElement是資料型別
+7.Output、innerHtml是屬性&lt;/p&gt;
+&lt;p&gt;心得:
+這次w12任務主要說明攝氏與華氏的轉換，從老師給的數字列去分析如何將此代入轉換，經由number代入轉換公式可得其結果，我們可以從中去學習html的轉換，以及提及的python的應用，又或者將其轉換為手機程式，提高生活使用程式的普及性。&lt;/p&gt;</content><category term="2019FallCP"></category></entry><entry><title>期中考</title><link href=".%5C40823251_w9.html" rel="alternate"></link><published>2019-11-07T11:00:00+08:00</published><updated>2019-11-07T11:00:00+08:00</updated><author><name>40823251</name></author><id>tag:None,2019-11-07:.\40823251_w9.html</id><summary type="html">&lt;p&gt;期中考&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;期中考&lt;/p&gt;
 
 
