@@ -144,7 +144,8 @@ document.getElementById("iframe").height = 600 ;
 <p><button onclick="getFlutter('flutter0')">Flutter0</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter4')">Flutter4</button> <button onclick="getFlutter('flutter_counter')">Flutter Counter</button> <button onclick="getFlutter('flutter_roc')">ROC Flag</button> <button onclick="getFlutter('flutter_mine1')">踩地雷 1</button> <button onclick="getFlutter('flutter_mine2')">踩地雷 2</button> <button onclick="getFlutter('flutter_mine3')">踩地雷 3</button> <button onclick="getFlutter('flutter_mine4')">踩地雷 4</button></p>
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823251&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p><h2>w13   CF影片</h2>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823251&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<h2>w13   CF影片</h2>
 <p>溫度的轉換(shareX壞了無聲版)</p>
 <p><iframe allowfullscreen="allowfullscreen" height="400" src="//www.youtube.com/embed/TLOGScPOM9w" width="600"></iframe><br/><br/></p>
 <p>重點整理:<br/>1.lnit是一個整數物件 ，可與parse (讀取) 一起宣告。<br/>2.將數字代入指定的公式，必須經由運算可得。<br/>3. == 表示判斷式。<br/>4.Input是html的表單。 value(預設)<br/>5.body中的white為白色<br/>6.InputElement是資料型別<br/>7.Output、innerHtml是屬性</p>
@@ -185,3 +186,79 @@ document.getElementById("iframe").height = 600 ;
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823251&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<br/><br/>w14   國旗JS
+<p><canvas height="200" id="canvas" width="300"></canvas></p>
+<script src="/downloads/dart_ex/roc_flag/roc_flag.js"></script>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">import 'dart:html';
+import 'dart:math' as Math;
+ 
+CanvasElement canvas;
+CanvasRenderingContext2D ctx;
+int flag_w = 300;
+int flag_h = 200;
+num circle_x = flag_w / 4;
+num circle_y = flag_h / 4;
+ 
+void main() {
+  canvas = querySelector('#canvas');
+  ctx = canvas.getContext('2d');
+ 
+  drawROC(ctx);
+  querySelector("#roc").onClick.listen((e) =&gt; drawROC(ctx));
+  querySelector("#usa").onClick.listen((e) =&gt; drawUSA(ctx));
+  querySelector("#button").onClick.listen((e) =&gt; clearCanvas());
+}
+ 
+void drawUSA(ctx){
+  // 請畫出美國國旗
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.font = "30px Arial";
+  ctx.strokeStyle = 'rgb(255, 0, 0)';
+  ctx.strokeText("請畫出美國國旗", flag_w/6, flag_w/4);
+}
+ 
+void drawROC(ctx){
+  // 先畫滿地紅
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  // 再畫青天
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fillRect(0, 0, flag_w / 2, flag_h / 2);
+  // 畫十二道光芒白日
+  ctx.beginPath();
+  num star_radius = flag_w / 8;
+  num angle = 0;
+  for (int i = 0; i &lt; 25; i++) {
+    angle += 5 * Math.pi * 2 / 12;
+    num toX = circle_x + Math.cos(angle) * star_radius;
+    num toY = circle_y + Math.sin(angle) * star_radius;
+    // 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i != 0)
+      ctx.lineTo(toX, toY);
+    else
+      ctx.moveTo(toX, toY);
+  }
+  ctx.closePath();
+  // 將填色設為白色
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+  // 白日:藍圈
+  ctx.beginPath();
+  ctx.arc(circle_x, circle_y, flag_w * 17 / 240, 0, Math.pi * 2, true);
+  ctx.closePath();
+  // 填色設為藍色
+  ctx.fillStyle = 'rgb(0, 0, 149)';
+  ctx.fill();
+  // 白日:白心
+  ctx.beginPath();
+  ctx.arc(circle_x, circle_y, flag_w / 16, 0, Math.pi * 2, true);
+  ctx.closePath();
+  // 填色設為白色
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+}
+ 
+void clearCanvas(){
+  ctx.clearRect(0, 0, flag_w, flag_h);
+}</pre>
