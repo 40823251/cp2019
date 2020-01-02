@@ -30,10 +30,10 @@ main() {
    
     if (type == "L"){
      
-      print("$number 英磅 =  ${LBtoKG(number)} 公斤");
+      print("$number 英磅 =  ${LBtoKG(number).toStringAsFixed(4)} 公斤");
     }else{
      
-      print("$number 公斤 =  ${KGtoLB(number)} 英磅");
+      print("$number 公斤 =  ${KGtoLB(number).toStringAsFixed(4)} 英磅");
     }
       
   } 
