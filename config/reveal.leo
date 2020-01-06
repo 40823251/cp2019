@@ -77,12 +77,12 @@ Created by [40823251](https://40823251.github.io/cp2019/content/index.html)
 </t>
 <t tx="leo.20180902120523.12"># 目錄
 
-* 溫度的轉換
-* 各組溫度的轉換
-* 繪製國旗
-* 亂數分組
-* 查驗考試
-* 心得
+* [溫度的轉換](https://40823251.github.io/cp2019/reveal/index.html#/2)
+* [各組溫度的轉換](https://40823251.github.io/cp2019/reveal/index.html#/2/1)
+* [繪製國旗](https://40823251.github.io/cp2019/reveal/index.html#/2/2)
+* [亂數分組](https://40823251.github.io/cp2019/reveal/index.html#/2/3)
+* [查驗考試](https://40823251.github.io/cp2019/reveal/index.html#/2/4)
+* [心得](https://40823251.github.io/cp2019/reveal/index.html#/2/5)
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
@@ -332,7 +332,7 @@ vertical: body pane on the botton</t>
     &lt;/script&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20200107004342.1">## 查驗考試程式
+<t tx="leo.20200107004342.1">## 心得
 
 
 這次w17任務主要說明如何利用js去完成PPT的運作模式，從老師給的教學去分析如何將此代入轉換，經由config的reveal.leo去做轉換，我們可以從中去學習程式的轉換，以及提及的python的應用，又或者將其轉換為手機程式，提高生活使用程式的普及性。</t>
